@@ -2,12 +2,6 @@ const express = require('express');
 const app = express();
 const port = 3000;
 
-/**
- * Function to return Roman equivalent of given number
- * @param {Object} req request object
- * @param {Object} res response object
- * @returns {String} Roman equivalent of given number
- */
 app.get('/numtoroman/:num', (req, res) => {
 	try {
 		let { num } = req.params;
